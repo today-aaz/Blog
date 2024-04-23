@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
     
     <head>
     <meta charset="utf-8">
@@ -7,7 +7,7 @@
     <meta name="description" content="Hexo+GitHub" />
     <meta name="hexo-theme-A4" content="v1.8.9" />
     <link rel="alternate icon" type="image/webp" href="/img/avatar.jpg">
-    <title>Hexo</title>
+    <title>AoZhou</title>
 
     
         
@@ -248,8 +248,8 @@
         width: 56px;
         height: auto;" alt="^-^" cache-control="max-age=86400" class="header-img" src="/img/avatar.jpg" width="10%"></img>
         <div class="header-content">
-            <a class="logo" href="/">Hexo</a> 
-            <span class="description"></span> 
+            <a class="logo" href="/">AoZhou</a> 
+            <span class="description">Java开发者｜阅读爱好者</span> 
         </div>
         
     </div>
@@ -316,21 +316,21 @@
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save // 配置相关依赖</span><br></pre></td></tr></table></figure>
 
-<ol>
+<ol start="2">
 <li>在_config.yml中添加以下配置</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/&lt;username&gt;/&lt;project&gt; // 远程仓库地址</span><br><span class="line">  branch: &lt;yourbranch&gt; // 推送分支名称</span><br></pre></td></tr></table></figure>
 
-
-
-<ol>
+<ol start="3">
 <li>执行git</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">git init // 初始化</span><br><span class="line"></span><br><span class="line">git remote add origin https://github.com/&lt;username&gt;/&lt;repository&gt;.git // 建立远程连接</span><br><span class="line"></span><br><span class="line">git remote -v // 验证是否建立了远程连接</span><br><span class="line"></span><br><span class="line">git add . // 添加所有文件到暂存区</span><br><span class="line"></span><br><span class="line">git commit -m <span class="string">&quot;Initial commit&quot;</span> // 提交文件到本地仓库</span><br><span class="line"></span><br><span class="line">git push -u origin main // 推送到远程仓库</span><br></pre></td></tr></table></figure>
 
-<ol>
-<li>执行 hexo clean，执行 hexo deploy</li>
-<li>浏览 &lt;GitHub 用户名&gt;.github.io&#x2F;仓库地址检查你的网站能否运作。</li>
+<ol start="4">
+<li><p>执行 hexo clean，执行 hexo deploy</p>
+</li>
+<li><p>浏览 &lt;GitHub 用户名&gt;.github.io&#x2F;仓库地址检查你的网站能否运作。</p>
+</li>
 </ol>
 </div><script src="https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
